@@ -20,20 +20,20 @@ public class Main {
         }
         else {
             trash = in.nextLine();
-            System.out.println("Please enter a numeric value. You entered: " + trash + ".");
-            System.out.println("Please run the program again.");
+            System.out.println("\nPlease enter a numeric value. You entered: " + trash + ".");
+            System.out.println("\nPlease run the program again.");
             System.exit(0);
         }
 
         if (itemPrice >= BREAK_OVER_PRICE) {
             shippingCosts = 0.00;
             totalPrice = itemPrice + shippingCosts;
-            System.out.println("Your shipping costs are worth " + shippingCosts + " dollars and your total price is worth " + totalPrice + " dollars.");
+            System.out.println("\nYour shipping costs are worth " + shippingCosts + " dollars and your total price is worth " + totalPrice + " dollars.");
         }
         else {
             shippingCosts = itemPrice * SHIPPING_PERCENT;
             totalPrice = itemPrice + shippingCosts;
-            System.out.println("Your shipping costs are worth " + shippingCosts + " dollars and your total price is worth " + totalPrice + " dollars.");
+            System.out.println("\nYour shipping costs are worth " + shippingCosts + " dollars and your total price is worth " + totalPrice + " dollars.");
         }
     }
 }
