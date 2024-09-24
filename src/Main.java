@@ -12,7 +12,7 @@ public class Main {
         String trash = "";
 
 
-        System.out.println("Enter the price of your item: ");
+        System.out.print("Enter the price of your item: ");
 
         if (in.hasNextDouble()) {
             itemPrice = in.nextDouble();
